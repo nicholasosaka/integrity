@@ -1,0 +1,31 @@
+{
+  "name": "integrity",
+  "version": "1.0.0",
+  "description": "Code similarity analysis",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "nodemon --config nodemon.json src/index.ts",
+    "dev:debug": "nodemon --config nodemon.json --inspect-brk src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nosaka0/integrity.git"
+  },
+  "keywords": [],
+  "author": "Nicholas Osaka",
+  "license": "GNU GPLv3",
+  "bugs": {
+    "url": "https://github.com/nosaka0/integrity/issues"
+  },
+  "homepage": "https://github.com/nosaka0/integrity#readme",
+  "devDependencies": {
+    "@types/node": "^16.3.2",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  }
+}
